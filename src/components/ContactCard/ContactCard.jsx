@@ -1,10 +1,10 @@
 import { Item, Btn } from './ContactCard.styled';
 
-const ContactCard = ({ contact: { id, name, number }, onDelete }) => {
+const ContactCard = ({ contact: { id, name, phone }, onDelete }) => {
   return (
     <Item key={id}>
       <span>{name}: </span>
-      <span>{number} </span>
+      <span>{phone} </span>
       <Btn type="button" onClick={() => onDelete(id)}>
         Delete
       </Btn>
