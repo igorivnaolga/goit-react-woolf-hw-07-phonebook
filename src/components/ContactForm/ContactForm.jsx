@@ -29,9 +29,9 @@ export const ContactForm = () => {
           name: '',
           number: '',
         }}
-        onSubmit={(values, action) => {
+        onSubmit={(values, actions) => {
           handleSubmitContact(values);
-          action.resetForm();
+          actions.resetForm();
         }}
       >
         <Form>

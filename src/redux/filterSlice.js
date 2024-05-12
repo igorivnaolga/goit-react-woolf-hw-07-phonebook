@@ -6,7 +6,7 @@ const filterSlice = createSlice({
 
   reducers: {
     filterPhone(state, action) {
-      state = action.payload;
+      return (state = action.payload);
     },
   },
 });
